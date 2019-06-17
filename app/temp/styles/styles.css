@@ -460,7 +460,7 @@ template {
 }
 
 @define-mixin atLarge {
-    @media (min-width: 1200px) {
+    @media (min-width: 1010px) {
         @mixin-content;
     }
 }
@@ -590,6 +590,36 @@ a {
         max-width: 976px;
     }
 
+.wrapper--no-padding-medium{
+        padding-left: 0;
+        padding-right: 0;
+
+    }
+
+@media (min-width: 530px) {
+
+.wrapper--no-padding-medium{
+            padding-left: 18px;
+            padding-right: 18px
+
+    }
+        }
+
+.wrapper--no-padding-large{
+        padding-left: 0;
+        padding-right: 0;
+
+    }
+
+@media (min-width: 1010px) {
+
+.wrapper--no-padding-large{
+            padding-left: 18px;
+            padding-right: 18px
+
+    }
+        }
+
 .wrapper .wrapper {
         padding-left: 0;
         padding-right: 0;
@@ -608,23 +638,57 @@ a {
 
 .page-section {
     padding: 1.2rem 0;
-
-
 }
 
 @media (min-width: 800px) {
 
 .page-section {
     padding: 4.5rem 0
-
-
 }
 }
+
+.page-section--no-b-padding-until-medium {
+    padding-bottom: 0;
+}
+
+@media (min-width: 800px) {
+
+.page-section--no-b-padding-until-medium {
+        padding-bottom: 4.5rem
+}
+    }
+
+.page-section--no-b-padding-until-large {
+    padding-bottom: 0;
+}
+
+@media (min-width: 1010px) {
+
+.page-section--no-b-padding-until-large {
+        padding-bottom: 4.5rem
+}
+    }
 
 .page-section--blue {
     background-color: #2f5572;
     color: #FFF;
 }
+
+.page-section--testimonial {
+
+        background-color: #e0e6ef;
+
+}
+
+@media (min-width: 800px) {
+
+.page-section--testimonial {
+
+        background: url('/assets/images/background.png') top center no-repeat;
+        background-size: cover
+
+}
+        }
 
 .headline {
     font-weight: 300;
@@ -695,6 +759,10 @@ a {
         margin-right: -65px;
     }
 
+.row--t-padding{
+        padding-top: 80px;
+    }
+
 .row--gutters-large {
         margin-right: -100px;
     }
@@ -703,6 +771,14 @@ a {
 
         padding-right: 65px;
    
+    }
+
+.row--gutters-small {
+        margin-right: -45px;
+    }
+
+.row--gutters-small > div {
+        margin-right: 45px;
     }
 
 .row--gutters-large > div {
@@ -747,6 +823,20 @@ a {
    
         }
 
+/* equal height rule */
+
+@media (min-width: 800px) {
+
+.row--equalhgt { 
+                display: flex
+        }
+            }
+
+.row--equalhgt > div {
+                float: none;
+                display: flex;
+            }
+
 .generic-content p {
     line-height: 1.5;
 
@@ -780,21 +870,21 @@ a {
     font-size: 2.5rem;
     font-weight: 200;
     text-align: center;
-
-    
 }
 
 @media (min-width: 530px) {
 
 .section-title {
         font-size:3.5rem
-
-    
 }
     }
 
 .section-title strong{
         font-weight: 300;
+    }
+
+.section-title--blue {
+        color: #2f5572;
     }
 
 .icon {
@@ -809,6 +899,9 @@ a {
 @media (min-width: 530px) {
 
 .icon {
+       
+        position: relative;
+        top: 8px;
         margin-right: .5rem;
         margin-left: 0;
         display: inline-block;
@@ -862,3 +955,52 @@ a {
             font-size: 1.75rem
     }
         }
+
+.test {
+    background-color: rgba(255, 255, 255, 0.705);
+    padding: 0 18px 1px 18px;
+    margin-bottom: 98px;
+}
+
+@media (min-width: 530px) {
+
+.test {
+        padding: 0 1.71rem 1px 1.71rem;
+        margin-bottom: 0
+}
+
+    }
+
+.test__photo {
+        border-radius: 60%;
+        overflow: hidden;
+        width: 160px;
+        height: 160px;
+        margin: 0 auto -80px auto;
+        position: relative;
+        top: -80px;
+        border: 6px solid rgba(255, 255, 255, .8);
+        
+
+    }
+
+.test__title {
+        color: #2f5572;
+        text-align: center;
+        font-size: 1.4rem;
+        font-weight: 500;
+        margin: 0;
+    }
+
+.test__subtitle {
+        color: #d59541;
+        text-align: center;
+        font-weight: 400;
+        font-size: 0.9375rem;
+        margin: 0.25rem;
+
+    }
+
+.test--last {
+        margin-bottom: 2px;
+    }

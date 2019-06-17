@@ -11,7 +11,9 @@
         font-weight: 300;
     }
 
-    
+    &--blue {
+        color: $mainBlue;
+    }
 }
 .icon {
     
@@ -21,6 +23,9 @@
     margin-bottom: 0.5rem;
 
     @media (min-width: 530px) {
+       
+        position: relative;
+        top: 8px;
         margin-right: .5rem;
         margin-left: 0;
         display: inline-block;

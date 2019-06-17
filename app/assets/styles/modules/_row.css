@@ -11,6 +11,10 @@
         margin-right: -65px;
     }
 
+    &--t-padding{
+        padding-top: 80px;
+    }
+
     &--gutters-large {
         margin-right: -100px;
     }
@@ -19,6 +23,14 @@
 
         padding-right: 65px;
    
+    }
+
+    &--gutters-small {
+        margin-right: -45px;
+    }
+
+    &--gutters-small > div {
+        margin-right: 45px;
     }
 
     &--gutters-large > div {
@@ -61,5 +73,17 @@
         }
     
    
+        }
+        /* equal height rule */
+
+        &--equalhgt {
+            @media (min-width: 800px) { 
+                display: flex;
+            }
+
+            & > div {
+                float: none;
+                display: flex;
+            }
         }
 }
