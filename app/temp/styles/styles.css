@@ -1047,8 +1047,9 @@ a {
 
 }
 
-.site-header__btn-container {
+.site-header__butten {
         float: right;
+        padding-right: 4.6875rem;
     }
 
 .site-header__logo {
@@ -1056,9 +1057,34 @@ a {
         top: 0;
         background-color: #2f5572;
         padding: 25px 36px;
+        margin-left: 4.6875rem;
    }
 
 /*
 
     */
+
+.primary-nav__pr {
+        float: right;
+    }
+
+.primary-nav ul {
+        margin: 0 ;
+        padding: 0;
+    }
+
+.primary-nav li {
+        list-style: none;
+        float: left;
+        padding-right: 20px;
+    }
+
+.primary-nav a {
+        color: #fff;
+        font-weight: 300;
+        text-decoration: none;
+        display: block;
+        padding: 12px 0;
+
+    }
 

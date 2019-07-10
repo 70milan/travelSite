@@ -6,8 +6,9 @@
     z-index: 2;
     background-color: rgba(47, 85, 114, .3);
    
-    &__btn-container {
+    &__butten {
         float: right;
+        padding-right: 4.6875rem;
     }
     
     &__logo {
@@ -15,6 +16,7 @@
         top: 0;
         background-color: $mainBlue;
         padding: 25px 36px;
+        margin-left: 4.6875rem;
    }
 
 }
