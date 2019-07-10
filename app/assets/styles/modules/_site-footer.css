@@ -1,19 +1,26 @@
-.sf {
+.site-footer {
     background-color: $mainBlue;
     color: #fff;
-    padding: .5rem 0;
+    padding: 0.5rem 0;
     text-align: center;
 
-
-    &__text{
+    &__text {
         display: block;
         margin-bottom: 1rem;
-        font-weight: 200;
+        font-weight: 100;
 
         @media (min-width: 800px) {
             display: inline;
-            margin-bottom: 0;
+            margin-bottom: 0rem;
             margin-right: 1.4rem;
+         
         }
-    }
-    }
+    
+    }   
+   
+}
+/*
+
+      
+
+    */
